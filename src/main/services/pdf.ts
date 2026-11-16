@@ -1,0 +1,7 @@
+import { OutputFormat } from '../../shared/formats';
+
+export function buildOutputPath(filePath: string, format: OutputFormat, fileName?: string) {
+  const name = fileName ?? filePath.split(/\\|\//).pop() ?? 'converted-document';
+  const baseName = name.replace(/\.[^/.]+$/, '');
+  return `C:\\Users\\CampoM1\\Documents\\Converted\\${baseName}.${format.toLowerCase()}`;
+}

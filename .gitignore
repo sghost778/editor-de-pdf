@@ -1,0 +1,10 @@
+node_modules/
+dist/
+release/
+.copilot-azure/
+.vite/
+out/
+coverage/
+*.log
+.env
+.DS_Store
